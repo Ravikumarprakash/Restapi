@@ -1,0 +1,14 @@
+#%RAML 1.0 SecurityScheme
+type: x-clientid-enforcement
+
+describedBy:
+  headers:
+    client-id:
+      type: string
+      example: "529fce20-7b70-434c-999a-76c7b1fb596c"
+    client-secret:
+      type: string
+      example: "529fce20-7b70-434c-999a-76c7b1fb596c"
+  responses:
+    401:
+      description: "Unauthorized Access"

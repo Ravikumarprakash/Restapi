@@ -1,0 +1,33 @@
+#%RAML 1.0
+title: SBI Bank RESTful API
+mediaType: 
+  - application/json
+  - application/xml
+protocols:
+  - HTTP
+  - HTTPS
+types:
+  Account: !include /exchange_modules/e256ae8e-b972-41a3-b052-1aca9ea4a1a4/sbi-account-data-type/1.0.0/sbi-account-data-type.raml
+
+uses:
+  Customer: DataTypes/customerDataType.raml
+  bankResource: ResourceTypes/bankResources.raml
+
+/accounts:
+  type: 
+    bankResource.bankCollection:
+      getResponse: !include Examples/accounts.json
+      postBody: !include Examples/accounts.json
+      postBodyType: Account[]
+      postResponse: !include Examples/accountCreateResponse.json
+  post:
+  get:
+
+/customers:
+  type: 
+    bankResource.bankCollection:
+      postBody: !include Examples/customer.json
+      postBodyType: Customer.customerType
+      postResponse: !include Examples/customerCreateResponse.json
+  post:
+

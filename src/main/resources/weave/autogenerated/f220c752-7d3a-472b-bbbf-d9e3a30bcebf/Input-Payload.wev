@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_f220c752_7d3a_472b_bbbf_d9e3a30bcebf_Input_Payload = Array<{  Status: String,   AccountId: Number,   Currency: String,   AccountType: "Credit" | "Loan" | "Saving" | "Current",   CreatedUpdateDateTime: String,   _?: Any}>
+

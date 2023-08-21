@@ -1,0 +1,23 @@
+#%RAML 1.0 DataType
+properties:
+  AccountId:
+    type: number
+    required: true
+  Status:
+    type: string
+    required: true    
+  CreatedUpdateDateTime:
+    type: string
+    required: true    
+  Currency:
+    type: string
+    required: true
+    maxLength: 3 
+  AccountType:
+    type: string
+    required: true
+    enum:
+      - Saving
+      - Current
+      - Credit
+      - Loan

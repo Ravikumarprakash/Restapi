@@ -1,0 +1,13 @@
+[{
+  "AccountId": 22289,
+  "Status": "Enabled",
+  "CreatedUpdateDateTime": "2019-01-01T06:06:06+00:00",
+  "Currency": "USD",
+  "AccountType": "Saving"
+},{
+  "AccountId": 31820,
+  "Status": "Enabled",
+  "CreatedUpdateDateTime": "2018-01-01T06:06:06+00:00",
+  "Currency": "GBP",
+  "AccountType": "Current"
+}]
